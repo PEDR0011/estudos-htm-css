@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+
+
+* { 
+    
+           /* cofiguração globais das CSS*/
+
+}
+
+
+body { background-image: linear-gradient(to right, #72F2EB, #00CCC0, #1B7F79);
+
+    font-family: 'Times New Roman', Times, serif;
+              /*
+              Medidas Absolutas
+              cm, mm, in, px, pt, pc
+
+              Medidas Relativas
+              em, ex, rem, vw, vh, %
+              16px geralmente é = 1em
+              */
+
+              /* weight = peso
+                 width = largura
+                 height = altura */
+
+                 /*  font-style -> font-weight -> font-size -> font-family 
+                 
+                 
+                      font-style: normal;
+                      font-weight: lighter;
+                      font-size: 40px;
+                      font-family: 'Times New Roman', Times, serif;
+                 */
+
+ font: normal lighter 18px "Times New Roman", Times, serif;
+
+
+
+
+              
+}                     
+main {
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 5px 5px 5px rgba(56, 54, 54, 0.726);
+    width: 400px;
+    padding: 10px;
+    margin: auto;
+}
+
+
+h1 {  color: #747F7F;
+      text-align: center;
+      text-shadow: 1px 1px 2px #747f7fe7;
+      
+     font-size: 2.3em;
+
+}
+h2 {  color: #FF4858;
+
+}
+p { 
+    text-align: justify;
+    
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-elementos</title>
+    <style>
+
+
+        /*
+        
+        #  =   id
+        .  =   class
+        :  =   pseudo-class
+        :: =   pseudo-element
+        >  =   clildren/filho
+        
+        */
+
+
+
+
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
+            font-weight: bolder;
+            background-color: white;
+      
+ 
+        }
+        a {
+            text-decoration: none;
+
+        }
+        a:hover {
+            text-decoration: underline;
+            color: red;
+        }
+        a:active {
+            color: darkcyan;
+        }
+        .favorito:hover > a {
+         
+        color: red; 
+         
+        
+        }
+        .favorito > p {
+            display: none;
+        }
+        .favorito:hover > p {
+            display: block;
+            color: red;
+        }
+        .favorito::before {
+            content: "⊂";
+            color: rgb(7, 189, 128);
+
+        }
+        .favorito::after {
+            content: "⊃";
+            color: rgb(7, 189, 128);
+
+        }
+        .favorito:active > a {
+            color: darkcyan;
+        }
+        li{
+            width: 155px;
+        }
+        ul {
+           list-style: disc; 
+        }
+
+
+    </style>
+</head>
+<body>
+<h1>Pseudo Elementos</h1>
+
+    <h2>Exemplo</h2>
+
+            <ul>   
+              <li class="favorito"><a href="https://www.intagram.com/pedr0henr1/" target="_blank">meu instagram</a><p>segue ai!!!</p></li>
+              <li><a href="https://www.tiktok.com/@lago026" target="_blank">meu tiktok</a></li>
+              <li><a href="https://www.youtube.com/channel/UCWXkc1goxCjIlEpXMolZS0Q" target="_blank">canal no youtube</a></li>
+            </ul>
+
+
+    
+</body>
+</html>
