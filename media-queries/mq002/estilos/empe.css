@@ -1,0 +1,12 @@
+@charset "UTF-8"; 
+
+/*Para Portrait*/
+
+
+
+body {
+    background-image: url("../imagem/cev-portrait.jpg");
+    background-position: center bottom;
+    
+
+}

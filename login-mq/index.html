@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="mstyle.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <article>
+            <h1>Login</h1>
+            
+            <form action="login.js" method="post" autocomplete="on">
+                <div class="de">
+                    <label for="iemail">Email</label><br>
+                    <input class="i" type="email" name="email" id="iemail" required autocomplete="email">
+                </div>
+                <div class="ds">
+                    <label for="isenha">Senha</label><br>
+                    <input class="i" type="password" name="senha" id="isenha" required minlength="8" placeholder="minimo 8 digitos">
+                </div>
+
+                <div class="dsub">
+                    <input class="ient" type="submit" name="entrar" id="ientrar" value="Entar">
+                </div>
+
+            </form>
+        </article>
+
+
+    </main>
+</body>
+</html>

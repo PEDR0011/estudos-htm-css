@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>output</title>
+</head>
+<body>
+    <form action="soma.java" method="get">
+
+        <div>
+            <label for="inum1">Numero1</label>
+            <input type="number" name="numero" id="inum1" min="0" max="25" required oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+        </div>
+
+        <div>
+            <label for="inum2">Numero2</label>
+            <input type="number" name="numero" id="inum2" min="0" max="25" required oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+        </div>
+
+        <div>
+            <label for="isoma">Soma</label>
+            <output name="soma" id="isoma">0</output>
+        </div>
+
+        <div>
+            <label for="inum">valor</label>
+            <input type="range" name="valor" id="inum" value="5" min="0" max="30" oninput="ival.innerHTML = Number(inum.value)"> 
+
+            <label for="ivalor"></label>
+            <output id="ival">5</output>        
+        </div>
+
+        <div>
+            <label for="iano">Em que ano você nasceu</label>
+            <input type="number" name="ano" id="iano" oninput="calcIdade()">
+        </div>
+        
+        <div>
+            <label for="iidade">Sua idade</label>
+            <output id="iidade">0</output>
+        </div>
+
+        <script>
+            function calcIdade() {
+                let atual = new Date().getFullYear()
+                iidade.innerHTML = Number(atual) - Number(iano.value)
+            }
+        </script>
+     
+
+    </form>
+
+</body>
+</html>

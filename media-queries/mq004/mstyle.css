@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+/* Versão Mobile First */
+
+
+/* Os pontos de interrupção do dispositivo são larguras de tela específicas usadas no design responsivo da web para adaptar o layout a vários dispositivos. Aqui estão os pontos de interrupção típicos do dispositivo:
+
+Dispositivos extrapequenos (telefones)
+
+Menos de 576px
+Dispositivos pequenos (telefones)
+
+576px e mais
+Dispositivos médios (tablets)
+
+768px e mais
+Dispositivos grandes (desktops)
+
+992px e mais
+Dispositivos extragrandes (desktops grandes)
+
+1200px e mais
+Dispositivos extraextragrandes (desktops muito grandes)
+
+1400px e mais
+Esses pontos de interrupção ajudam a garantir que os sites sejam visualmente atraentes e funcionais em uma ampla variedade de dispositivos, de pequenos smartphones a grandes monitores de desktop. */
+
+
+
+
+
+* {
+    margin: 0px;
+    padding: 0%;
+
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(imagens/back-phone.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    
+    
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.767);
+    height: 400px;
+    width: 425px;
+    margin: auto;
+    border-radius: 5%;
+    margin-top: 30px;
+    
+    
+}
+
+
+h1 {
+    padding: 10px;
+    color: black;
+    text-align: center;
+    text-shadow: 1px 1px 5px white;
+}
+
+img {
+    margin: auto;
+    display: block;
+}
+
+#iph {
+
+   display: block; 
+}
+
+
+#ipr {
+
+    display: none;
+}
+
+#itv {
+
+    display: none;
+}
+
+#ita {
+    
+    display: none;
+}
+
+#ipc {
+
+    display: none;
+}

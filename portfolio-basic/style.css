@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+
+
+
+body {
+    font-family:'Courier New', Courier, monospace ;
+    background-color: rgba(0, 0, 0, 0.836);
+    
+  
+    
+}
+
+main {
+    text-indent: 30px;
+    
+}
+ header {
+    text-indent: 30px;
+ }
+
+ footer {
+    text-indent: 30px;
+    
+ 
+ }
+    
+    
+h1{
+
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    
+ 
+}
+
+.fundocont {
+    background-color: #1e85ce;
+    padding: 5px;
+ 
+    border-radius: 5%;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.html {
+    width: 100px;
+    margin-left: 140px;
+}
+
+.css {
+    width: 100px;
+    margin-left: 30px;
+}
+a {
+   color: rgba(245, 245, 220, 0.801); 
+   font-weight: bold;
+   
+}
+
+a:hover {
+    color:#F16529;
+    
+    padding: 7px;
+    transition: 0.1s;
+} 
+
+#eu {
+    
+    width: 192px;
+    height: 192px;
+    border-radius:50%;
+    box-shadow:2px 2px 7px rgba(0, 0, 0, 0.664);
+
+  
+    
+  
+    
+    
+}
+.pb {
+    font-weight: 600;
+    color: black;
+}
+
+h2 {
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.144);
+}

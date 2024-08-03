@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe</title>
+    <style>
+        iframe {
+            width: 90vw;
+            height: 60vw;
+            border: 1px solid black;
+        }
+        li > a:hover {
+            color: white;
+        }
+        body {
+            background-color: lightgreen;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Iframe dos Projetos</h1>
+    </header>
+        <main>
+                <article>
+                   <h3>Escolha uma das Paginas</h3>
+                        <ul>
+                            <li><a href="../pagina01.html" target="quadro">pagina01</a></li>
+                            <li><a href="../pagina02.html" target="quadro">pagina02</a></li>
+                        </ul>
+                </article> 
+                    <article>
+                        <iframe srcdoc="<h1>Escolha uma das opção acima</h1>"name="quadro" frameborder="0" scrolling="auto">
+                            <p>[Seu Navergador não é Compativel]</p>
+                        </iframe>
+                    </article>      
+        </main>
+</body>
+</html>

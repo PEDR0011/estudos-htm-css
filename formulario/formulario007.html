@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario007</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <div>
+            <label for="iest">Estados</label>
+            <select name="estados" id="iest">
+
+                <option value="" selected>---Escolhar</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="AM">Amazonas</option>
+
+            <optgroup label="REGIÃO NORDESTE">
+            
+                <option value="BH">Bahia</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PB">Paraiba</option>
+                <option value="CE">Ceará</option>
+                <option value="AL">Alagoas</option>
+                <option value="PI">Piaui</option>
+                <option value="SE">Sergipe</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="MA">Maranhão</option>
+                
+            </optgroup>
+            </select>
+        </div>
+
+        <div>
+            <label for="imarc">Marcas</label>
+            <input type="text" name="marc" id="imarc" list="lstmarc">
+                <datalist id="lstmarc">
+                    <option value="ni">Nike</option>
+                    <option value="ad">Adiadas</option>
+                    <option value="pu">Puma</option>
+                    <option value="oli">Olimpikus</option>
+                    <option value="kin">King</option>
+                    <option value="cyc">Cyclone</option>
+                </datalist>  
+        </div>
+
+        <div>
+            <label for="ifsv">Fale Sobre Você</label><br>
+            <textarea name="fsv" id="ifsv" cols="30" rows="20" placeholder="--Escreva Aqui"></textarea>
+        </div>
+
+    </form>
+</body>
+</html>

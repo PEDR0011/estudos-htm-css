@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+
+
+
+
+/* Os pontos de interrupção do dispositivo são larguras de tela específicas usadas no design responsivo da web para adaptar o layout a vários dispositivos. Aqui estão os pontos de interrupção típicos do dispositivo:
+
+Dispositivos extrapequenos (telefones)
+
+Menos de 576px
+Dispositivos pequenos (telefones)
+
+576px e mais
+Dispositivos médios (tablets)
+
+768px e mais
+Dispositivos grandes (desktops)
+
+992px e mais
+Dispositivos extragrandes (desktops grandes)
+
+1200px e mais
+Dispositivos extraextragrandes (desktops muito grandes)
+
+1400px e mais
+Esses pontos de interrupção ajudam a garantir que os sites sejam visualmente atraentes e funcionais em uma ampla variedade de dispositivos, de pequenos smartphones a grandes monitores de desktop. */
+
+
+
+@media screen and (min-width: 758px) { /* Tablets */
+    
+
+     
+     body {
+     
+         background-color: rgb(203, 230, 238);
+     }
+     
+     header {
+     
+        height: 200px;
+        
+     }
+     
+     header > h1 {
+        
+        font-size: 3em;
+     }   
+     
+     #burger {
+
+         display: none;
+         
+     }
+     
+     
+     menu {
+         display: block;
+         margin-top: 30px;
+     }
+     
+  
+    
+     
+     main {
+     
+        
+         width: 638px;
+         
+         
+     }
+
+     main > article > h2 {
+
+        font-size: 2.5em;
+    }
+
+    main > article > p {
+
+        font-size: 21px;
+
+
+        
+    }
+     
+     
+
+
+}
+
+@media screen and (min-width: 992px) { /* Desktops */
+
+    header {
+
+        height: 300px;
+    }
+
+    header > h1 {
+
+        font-weight: bolder;
+        font-size: 4em;
+    }
+
+
+    header > menu > ul {
+
+       position: relative; 
+       top: 150px;
+    }
+
+    header > menu > ul > li {
+
+      text-align: left;
+      display: inline;
+      margin: 0%;
+      margin-left: 5px;
+      
+     
+
+
+    }
+
+    a {
+
+    background-color: transparent;    
+    border: none;
+    display: inline;
+    color: black;
+    padding: 3px;
+    background-color: burlywood;
+    padding: 5px;
+
+
+    }
+
+
+
+
+    a:hover {
+        
+        padding: 8px;
+        transition: 0.3s;
+
+    }
+
+    main {
+
+        width: 800px;
+    }
+    
+   
+    
+    
+    
+}
+
+
+
+

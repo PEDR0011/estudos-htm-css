@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 05</title>
+</head>
+<body>
+   <form action="cadastro,php" method="post" autocomplete="on" >
+
+    <fieldset>
+        <legend>Sexo</legend>
+        <div>
+            <label for="im">Masculino</label>
+            <input type="radio" name="sexos" id="im" value="masculino" required checked>
+        </div>
+        <div>
+            <label for="if">Feminino</label>
+            <input type="radio" name="sexos" id="if" value="feminino" required>
+        </div>
+
+    </fieldset>
+
+    <fieldset>
+                <legend>Esportes</legend>
+        <div>
+            <label for="ifut">Futebol</label>
+            <input type="checkbox" name="fut" id="ifut" value="futebol" checked>
+        </div>
+        <div>
+            <label for="ivol">Vôlei</label>
+            <input type="checkbox" name="volei" id="ivol" value="volei">
+        </div>
+        <div>
+            <label for="ibasq">Basquete</label>
+            <input type="checkbox" name="basq" id="ibasq" value="basquete">
+        </div>
+        <div>
+            <label for="inata">Natação</label>
+            <input type="checkbox" name="nata" id="inata">
+        </div>
+    </fieldset>
+
+        <div>
+ 
+            <input type="reset" name="limpar" id="ilimpar" value="Limpar">
+            <input type="submit" name="enviar" id="ienv">
+        </div>
+
+
+   </form>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox02</title>
+    <style>
+        body {
+            background-color: #17191E;
+        }
+        .contener {
+            display: flex;
+            /*
+            flex-direction: row-reverse;
+            flex-wrap: wrap-reverse;
+            */ 
+            flex-flow: row-reverse wrap-reverse;
+            background-color: green;
+            
+        }
+        div {
+            color: white;
+            flex: auto;
+            background-color: rgb(0, 77, 128);
+            border: 1px solid black;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contener">
+        <div>AAAAAAAAAAAAAA</div>
+        <div>BBBBBBBBBBBBBB</div>
+        <div>CCCCCCCCCCCCCC</div>
+        <div>DDDDDDDDDDDDDD</div>
+        <div>EEEEEEEEEEEEEE</div>
+    </div>
+</body>
+</html>

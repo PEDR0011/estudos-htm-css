@@ -1,0 +1,203 @@
+@charset "UTF-8";
+
+
+
+
+
+
+
+
+  /*Os pontos de interrupção do dispositivo são larguras de tela específicas usadas no design responsivo da web para adaptar o layout a vários dispositivos. Aqui estão os pontos de interrupção típicos do dispositivo:
+
+    font: CHATGPT              Data: 27/07/2024
+
+Dispositivos extrapequenos (telefones)
+
+  Menos de 576px
+
+Dispositivos pequenos (telefones)
+
+  576px e mais
+
+Dispositivos médios (tablets)
+
+  768px e mais
+
+Dispositivos grandes (desktops)
+
+  992px e mais
+
+Dispositivos extragrandes (desktops grandes)
+
+  1200px e mais
+
+Dispositivos extraextragrandes (desktops muito grandes)
+
+  1400px e mais
+
+Esses pontos de interrupção ajudam a garantir que os sites sejam visualmente atraentes e funcionais em uma ampla variedade de dispositivos, de pequenos smartphones a grandes monitores de desktop.*/
+
+
+
+
+@media screen  and (min-width: 762px) and (max-width: 992px) { /* Tablete */
+ 
+    body {
+        background-image: url(imagens/back-tablet.jpg);
+        
+
+    } 
+
+      #iph {
+
+        display: none; 
+     }
+     
+     
+     #ipr {
+     
+         display: none;
+     }
+     
+     #itv {
+     
+         display: none;
+     }
+     
+     #ita {
+         
+         display: block;
+     }
+     
+     #ipc {
+     
+         display: none;
+     }
+
+
+}
+
+@media print { /* Impressora*/
+
+  body {
+
+    background-image: url(imagens/back-print.jpg);
+    
+  }
+
+  main {
+
+    
+   border: 1px solid black;
+  }
+
+  main::after {
+
+    content: "Quem fez o Media Queries para a impressão foi pedro Henrique";
+  }
+
+  #iph {
+
+    display: none; 
+ }
+ 
+ 
+ #ipr {
+ 
+     display: block;
+ }
+ 
+ #itv {
+ 
+     display: none;
+ }
+ 
+ #ita {
+     
+     display: none;
+ }
+ 
+ #ipc {
+ 
+     display: none;
+ }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /* Computado */
+    
+
+    body {
+
+      background-image: url(imagens/back-pc.jpg);
+
+    }
+
+    #iph {
+
+      display: none; 
+   }
+   
+   
+   #ipr {
+   
+       display: none;
+   }
+   
+   #itv {
+   
+       display: none;
+   }
+   
+   #ita {
+       
+       display: none;
+   }
+   
+   #ipc {
+   
+       display: block;
+   }
+}
+
+@media screen and (min-width: 1200px) { /* Televisão */
+
+  body {
+
+    background-image: url(imagens/back-tv.jpg);
+
+
+
+  }
+
+  main {
+
+    width: 900px;
+  }
+
+  #iph {
+
+    display: none; 
+ }
+ 
+ 
+ #ipr {
+ 
+     display: none;
+ }
+ 
+ #itv {
+ 
+     display: block;
+ }
+ 
+ #ita {
+     
+     display: none;
+ }
+ 
+ #ipc {
+ 
+     display: none;
+ }
+}
