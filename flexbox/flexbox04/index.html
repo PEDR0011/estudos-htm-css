@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox04</title>
+    <style>
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        body {
+            background-color: #17191E;
+            color: white;
+        }
+        header {
+            display: inline;
+            text-align: center;
+        }
+        header > h1 {
+            color: #00b300;
+        }
+        main > article > h2 {
+            color: #99ff33;
+        }
+        .contener {
+            border: 1px solid black;
+            height: 300px;
+            width: 300px;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        li {
+            padding-top: 5px;
+            font-size: larger;
+            
+            
+        }
+     
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Noticias</h1>
+    </header>
+
+    <main>
+        <article class="contener">
+
+            <section class="itens">
+                <ul>
+                    <li><a href="#imp">Imposto</a></li>
+                    <li><a href="#econ">Economia</a></li>
+                    <li><a href="#sau">Saúde</a></li>
+                    <li><a href="#tec">Tecnologia</a></li>
+                    
+                </ul>
+            </section>
+
+        </article>
+
+        <article>
+            <h3 id="tec">Tecnologia</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil provident in sunt nostrum odio, possimus ratione at. Beatae quis dignissimos eum expedita, eos commodi eveniet odit voluptas natus fugit reprehenderit?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt non corporis, iste pariatur doloremque repellendus molestias officiis nihil quia inventore ea, placeat mollitia sunt quidem. Architecto officiis officia nulla porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, explicabo reprehenderit ipsa rerum quidem quos dignissimos, quam repellendus minus delectus distinctio veniam! Praesentium consequatur quo suscipit, modi veritatis consequuntur voluptates?</p>
+
+            <h3 id="sau">Saúde</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, unde minima accusantium illum quidem, temporibus, vero nostrum distinctio excepturi eos laborum ipsum a modi? Velit quos natus laudantium esse pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas aut culpa consectetur laboriosam sapiente alias ad expedita minima quis dignissimos recusandae, cum consequatur perferendis, vitae sed blanditiis distinctio nemo numquam!</p>
+
+            <h3 id="econ">Economia</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sit odio magni. Voluptatem quibusdam deserunt rem quisquam voluptas, odit quod, necessitatibus, accusantium adipisci nam officia. Libero suscipit officiis odio sunt.</p>
+
+            <h3 id="imp">Imposto</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facilis molestias, voluptatem nemo blanditiis optio dolor ut quaerat. Autem, dolorum atque voluptates facere incidunt vero illum qui quo eaque quasi.</p>
+        </article>
+    </main>
+
+        <footer></footer>
+</body>
+</html>
