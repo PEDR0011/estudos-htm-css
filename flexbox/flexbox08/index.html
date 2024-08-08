@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox08</title>
+  <style>
+    body {
+      background-color: lightslategrey;
+    }
+
+    main {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: flex-start;
+      background-color: aquamarine;
+      width: 500px;
+      height: 600px;
+    }
+
+    li {
+      list-style: none;
+      background-color: tomato;
+      border: 1px solid black;
+      padding: 20px;
+      /* align-self são usados so nos items */
+    }
+
+    #it1 {
+      align-self: auto;
+    }
+
+    #it2 {
+      align-self: flex-start;
+    }
+
+    #it3 {
+      align-self: stretch;
+    }
+
+    #it4 {
+      align-self: center;
+    }
+
+    #it5 {
+      align-self: flex-end;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <li id="it1">A</li>
+    <li id="it2">B</li>
+    <li id="it3">C</li>
+    <li id="it4">D</li>
+    <li id="it5">E</li>
+  </main>
+</body>
+
+</html>
