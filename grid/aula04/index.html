@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid04</title>
+  <style>
+    body {
+      background-color: rgba(165, 42, 42, 0.603);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .pai {
+      background-color: rgb(5, 35, 61);
+      padding: 40px;
+      display: grid;
+      grid-template-areas:
+        "logo  nav nav"
+        "propaganda conteudo conteudo"
+        "... conteudo conteudo"
+        "footer footer footer";
+        grid-template-columns: minmax(200px, auto);
+        grid-template-rows: 40px 300px 0px 50px ;
+        /*Define 20px entre os elementos do grid (linha e coluna).*/
+        gap: 10px 15px;
+    }
+    div {
+      background-color: black;
+      color: white;
+      text-align: center;
+    }
+    .itemlogo {
+      grid-area: logo;
+    }
+    .itemnav {
+      grid-area: nav;
+    }
+    .itempropaganda {
+      grid-area: propaganda;
+    }
+    .itemconteudo {
+      grid-area: conteudo;
+    }
+    .itemfooter {
+      grid-area: footer;
+    }
+  </style>
+</head>
+<body>
+  <div class="pai">
+    <div class="itemlogo">logo</div>
+    <div class="itemnav">nav</div>
+    <div class="itempropaganda">propaganda</div>
+    <div class="itemconteudo">conteudo</div>
+    <div class="itemfooter">footer</div>
+  </div>
+</body>
+</html>
