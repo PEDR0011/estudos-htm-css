@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid1</title>
+  <style>
+    .contener {
+      background-color: lightgray;
+      display: grid;
+      grid-template-columns: 10% 10% 1fr 1fr 30px;
+      grid-gap: 5px;
+      margin-bottom: 30px;
+      padding: 5px;
+    }
+    li {
+      list-style: none;
+      background-color: tomato;
+      border: 1px solid black;
+      text-align: center;
+    }
+    .contener2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      background-color: aqua;
+      grid-gap: 5px;
+      padding: 5px;
+    }
+    .subcont {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      order: 2;
+    }
+    .order {
+      order: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="contener">
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+    <li>D</li>
+    <li>E</li>
+    <li>F</li>
+    <li>G</li>
+    <li>H</li>
+    <li>I</li>
+    <li>J</li>
+  </div>
+
+  <div class="contener2">
+    <li>A</li>
+    <li>B</li>
+    <li class="order">B</li>
+    <li>C</li>
+    <li>D</li>
+    <li>E</li>
+    <div class="subcont">
+      <li>F</li>
+      <li>G</li>
+      <li>H</li>
+      <li>I</li>
+      <li>J</li>
+    </div>
+  </div>
+</body>
+</html>
