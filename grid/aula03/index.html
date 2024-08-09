@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid03</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+    }
+    .pai {
+      background-color: tomato;
+      padding: 10px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(100px, auto));
+      /* As linhas implícitas, geradas automaticamente, terão 100px de altura */
+      grid-template-rows: 50px 30px;
+    }
+    div {
+      background-color: rgb(100, 98, 98);
+      border: 1px solid white;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="pai">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+  </div>
+</body>
+</html>
