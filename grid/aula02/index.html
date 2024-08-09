@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid02</title>
+  <style>
+    body {
+      background-color: lightgray;
+    }
+    .contener {
+      display: grid;
+      background-color: chocolate;
+      padding: 5px;
+      margin-bottom: 30px;
+      /* minmax define um valor minimo e um maximo de uma coluna*/
+      grid-template-columns: minmax(300px, 1fr) 1fr 1fr;
+    }
+    div {
+      background-color: rgb(119, 30, 14);
+      color: white;
+      border: 1px solid white;
+      text-align: center;
+    }
+    .contener2 {
+      display: grid;
+      background-color: chocolate;
+      padding: 5px;
+      margin-bottom: 30px;
+      /* o repeat vai repetir o número de colunas*/
+      grid-template-columns: 2fr repeat(2, 1fr) 50px ;
+    }
+    .contener3 {
+      display: grid;
+      background-color: chocolate;
+      padding: 5px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    }
+  </style>
+</head>
+<body>
+  <div class="contener">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+  </div>
+
+  <div class="contener2">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+  </div>
+
+  <div class="contener3">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+  </div>
+</body>
+</html>
