@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid06</title>
+  <style>
+    body {
+      background-color: lightslategray;
+      font-weight: bolder;
+    }
+
+    .pai {
+      background-color: aqua;
+      border: 1px solid black;
+      height: 400px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(100px, auto));
+      justify-content: space-between;
+      align-content: space-between;
+      grid-auto-flow: dense;
+    }
+
+    .filho1 {
+      background-color: tomato;
+      color: white;
+      border: 1px solid black;
+      grid-column: 3;
+    }
+
+    .filho2 {
+      background-color: tomato;
+      color: white;
+      border: 1px solid black;
+      grid-row: span 2;
+    }
+
+    .filho3 {
+      background-color: tomato;
+      color: white;
+      border: 1px solid black;
+    }
+
+    .filho4 {
+      background-color: tomato;
+      color: white;
+      border: 1px solid black;
+    }
+
+    .filho5 {
+      background-color: tomato;
+      color: white;
+      border: 1px solid black;
+    }
+
+    .filho6 {
+      background-color: tomato;
+      color: white;
+      border: 1px solid black;
+      grid-column: span 3;
+      
+    }
+  </style>
+</head>
+
+<body>
+  <div class="pai">
+    <div class="filho1">A</div>
+    <div class="filho2">B</div>
+    <div class="filho3">C</div>
+    <div class="filho4">D</div>
+    <div class="filho5">E</div>
+    <div class="filho6">F</div>
+  </div>
+</body>
+
+</html>
