@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid 07</title>
+</head>
+<style>
+  .pai {
+    background-color: chartreuse;
+    height: 300px;
+    width: 30pxpx;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, auto));
+    grid-gap: 30px;
+  }
+
+  .filho1 {
+    background-color: lightgray;
+    border: 1px solid black;
+  }
+
+  .filho2 {
+    background-color: lightgray;
+    border: 1px solid black;
+    grid-column: span 2;
+  }
+
+  .filho3 {
+    background-color: lightgray;
+    border: 1px solid black;
+    grid-row: span 3;
+  }
+
+  .filho4 {
+    background-color: lightgray;
+    border: 1px solid black;
+    grid-row: span 6;
+  }
+
+  .filho5 {
+    background-color: lightgray;
+    border: 1px solid black;
+    grid-row: span 4;
+  }
+</style>
+
+<body>
+  <div class="pai">
+    <div class="filho1">1</div>
+    <div class="filho2">2</div>
+    <div class="filho3">3</div>
+    <div class="filho4">4 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, sunt non. Nisi eveniet
+        magnam unde cupiditate ipsum, iusto excepturi laboriosam numquam, suscipit hic sint eaque, veritatis itaque
+        dolore atque accusamus!</p>
+    </div>
+    <div class="filho5">5</div>
+  </div>
+</body>
+
+</html>
