@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid08</title>
+  <style>
+    * {
+      margin: 0;
+      font-family: monospace;
+    }
+    .paihead {
+      height: 100px;
+      display: grid;
+      justify-content: start;
+      align-content: space-evenly;
+      gap: 30px;
+      grid-template-columns: repeat(4, minmax(100px, auto));
+      justify-items: center;
+      align-items: end;
+    }
+    .h1p {
+      font-size: 40px;
+    }
+    .nav1 {
+      list-style: none;
+      font-size: 18px;     
+    }
+    .nav2 {
+      list-style: none;
+
+      font-size: 18px;          
+    }
+    .nav3 {
+      list-style: none;
+
+      font-size: 18px;     
+    }
+    .pai2 {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(100px, auto));
+      justify-content: start;
+      gap: 30px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 17px;
+    }
+    img {
+     width: 100%;
+    }
+    a {
+      text-decoration: none;
+    }
+    footer {
+      font-size: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="paihead">
+    <h1 class="h1p">Grid</h1>
+      <li class="nav1"><a href="#">Noticias</a></li>
+      <li class="nav2"><a href="#">Sua mãe</a></li>
+      <li class="nav3"><a href="#">Sei la</a></li>
+  </header>
+  <main class="pai2">
+    <article class="arti1pai2"> 
+      <section>
+        <img src="1671193211900.jpg" alt="CSS Grid">
+      </section>
+    </article>
+    <article class="arti2pai2">
+      <section>
+        <h2>Bla bla</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae est nostrum possimus voluptatum placeat.
+          Necessitatibus eum reprehenderit, vel similique nisi tempore id? Delectus ex error est obcaecati. Nemo,
+          maiores corporis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio sed quibusdam ad fuga,
+          pariatur at sequi maxime ipsa asperiores modi voluptatem laborum, in esse non neque placeat! Saepe, molestias
+          exercitationem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus ratione doloribus accusantium
+          vitae quas iusto non! Quidem architecto amet eaque enim fugit, repudiandae ratione. Eaque error eligendi
+          aliquam obcaecati tenetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati sunt iure voluptatum fugit! Voluptates
+          impedit fugit, ab dolor distinctio dolores fugiat facere veritatis commodi soluta modi iusto, numquam, error
+          quo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, maxime! Fugit molestias at optio ad fuga
+          sequi, eligendi quaerat. Minima dignissimos reprehenderit dolores eos id, dicta deserunt nihil impedit
+          voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat cumque libero illum dicta
+          recusandae consequuntur ullam et, error nihil, voluptates voluptatibus odio nisi. Quod eum pariatur, ducimus
+          quam quae magnam!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ducimus delectus ipsam dolor libero repellendus
+          ab, reiciendis sit iure impedit voluptatibus accusamus eligendi illum vel? Aliquid eveniet magni maiores
+          quibusdam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nostrum dolor praesentium laboriosam
+          maxime nam temporibus libero amet esse quidem, quos illo cum dignissimos beatae eligendi corporis inventore!
+          Ipsa, hic?</p>
+      </section>
+    </article>
+    <article class="arti3pai2"> 
+      <section>
+        <img src="0_C8W3aR9H66rcj7Ml.png" alt="CSS Grid">
+      </section>
+    </article>
+  </main>
+  <footer> Desenvolvido pro Pedro Henrique</footer>
+</body>
+
+</html>
