@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+  margin: 0px auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightblue;
+  padding: 20px;
+}
+
+.navegacao {
+  display: flex;
+}
+
+.navegacao>li>a {
+  display: block;
+  color: black;
+  background-color: lightgray;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.navegacao li+li {
+  margin-left: 16px;
+}
+
+/* Flexbox 1 */
+
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  max-width: 900px;
+  margin: 20px auto;
+  background-color: tomato;
+}
+
+.flex>div {
+  max-width: 266px;
+  margin: 5px 10px;
+}
+
+/* Grid 01 */
+
+.grid01 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  max-width: 890px;
+  padding: 10px;
+  background-color: tomato;
+  margin: 20px auto;
+  gap: 10px;
+}
+
+.grid01>div {
+  max-width: 266px;
+}
+
+.grid01>div:nth-child(n+4) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid01>div.anuncio {
+  grid-row: 2/5;
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .grid01 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid01>div:nth-child(n+4) {
+    display: block;
+  }
+}
+
+/* Grid02 */
+
+.grid02 {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 10px auto;
+  background-color: tomato;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.grid02>aside {
+  grid-column: 2;
+  margin: 0px auto;
+}
+
+.video {
+  grid-row: span 2;
+}
+
+.video>h3 {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .grid02 {
+    grid-template-columns: 1fr;
+  }
+
+  .video {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  .aside {
+    display: flex;
+    overflow: scroll;
+  }
+
+  .aside>div {
+    flex: 1 0 200px;
+    margin: 5px 10px;
+  }
+
+}
+
+/* Grid03 */
+.grid03 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: tomato;
+  max-width: 900px;
+  margin: 10px auto;
+  gap: 10px;
+}
+
+.grid03>div {
+  max-width: 400px;
+  margin: 5px auto;
+}
+
+.imgbig {
+  grid-row: span 3;
+}
+
+.grid03>div>h3 {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
